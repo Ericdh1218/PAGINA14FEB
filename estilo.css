@@ -1,0 +1,139 @@
+body {
+    background-color: #55423d;
+}
+header{
+    padding: 20px auto;
+    margin: 20px auto;
+    background-color: #f5f5f5;
+    border-radius: 15px;
+}
+h1{
+    text-align: center;
+    color: #55423d;
+}
+nav{
+    text-align: center;
+}  
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul li{
+    display: inline;
+    margin: 0 10px;
+}
+/*.-----------------------------------*/
+section.inicio{
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff3ec;
+    border-radius: 15px;
+}
+section.inicio h2{
+    color: #55423d;
+}
+section.inicio p{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+}
+
+section.galeria {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #9656a1;
+    border-radius: 15px;
+    max-width: 90vw; /* Ajusta el ancho dinámicamente */
+    height: 600px; /* Aumenta la altura */
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.galeria {
+    display: flex;
+    width: 90%;
+    height: 500px; /* Aumenta la altura */
+    overflow: hidden;
+}
+
+.galeria img {
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    filter: brightness(80%);
+    transition: .7s ease;
+    height: 100%;
+}
+
+.galeria img:hover {
+    width: 700px; /* Expande más la imagen */
+    opacity: 1;
+    filter: brightness(130%);
+}
+
+/*-------------------------------------------*/
+.Carta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+.carta-container {
+    position: relative;
+    width: 350px;
+    height: 250px;
+    perspective: 1000px;
+    cursor: pointer;
+}
+.carta {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    transition: transform 0.7s;
+}
+.carta.abierta {
+    transform: rotateY(180deg);
+}
+.cara {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-family: 'Georgia', serif;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+}
+.frontal {
+    background-color: #ff6b6b;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.frontal h3 {
+    margin: 0;
+    font-size: 24px;
+}
+.trasera {
+    background-color: #ffcc5c;
+    transform: rotateY(180deg);
+    color: #55423d;
+}
+/* estilo.css */
